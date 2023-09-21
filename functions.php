@@ -116,3 +116,13 @@ function getAllCommentsByArticleId($id){
 
 }
 
+
+
+
+function getArticlesByAuthorId($id){
+    $connect = dbConnect();
+    $stmt = $connect->query("SELECT * FROM articles WHERE articles.fk_id_author = $id");
+    $role = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $role;
+
+}

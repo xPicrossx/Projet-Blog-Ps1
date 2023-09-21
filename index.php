@@ -49,7 +49,9 @@ if(isset($_POST) && !empty($_POST)){
                       <h5 class="card-title"><?php echo $title ?></h5> 
 
                       <p class="card-text"><?php echo $date ?></p>
-                      <p class="card-text">Ecris par:<?php echo " ".$nameauthor[0]['nickname'] ?></p>
+                      <p class="card-text">Ecris par: <a href="articlesbyauthor.php?id=<?php echo $article['fk_id_author'] ?>"><?php echo " ".$nameauthor[0]['nickname'] ?></a></p>
+                        
+                      <?php // echo " ".$nameauthor[0]['nickname'] ?></p>
 
                       <!-- <p class="card-text"><?php //echo $article ?></p> -->
 
