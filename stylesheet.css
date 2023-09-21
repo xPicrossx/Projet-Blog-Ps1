@@ -1,0 +1,15 @@
+#logo {
+    height: 60px; 
+  width: 60px;
+}
+
+#img {
+  height: 250px;
+  width: 250px
+}
+
+body {
+  background-image: url("images/bg01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
